@@ -97,6 +97,7 @@
   <ItemGroup>
     <Folder Include="MVVM\Model\" />
     <Folder Include="MVVM\ViewModel\" />
+    <Folder Include="Net\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
