@@ -14,9 +14,11 @@ namespace Chat_App.Net
             _client = new TcpClient();
         }
 
-        public void ConnectToServer() {
+        public void ConnectToServer(string username) {
+
             if (!_client.Connected) {
                 _client.Connect("127.0.0.1", 7891);
+
             }
         }
 
