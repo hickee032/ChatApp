@@ -3,7 +3,6 @@ C:\Users\bluep\source\repos\Chat_App\ChatServer\bin\Debug\net6.0\ChatServer.deps
 C:\Users\bluep\source\repos\Chat_App\ChatServer\bin\Debug\net6.0\ChatServer.runtimeconfig.json
 C:\Users\bluep\source\repos\Chat_App\ChatServer\bin\Debug\net6.0\ChatServer.dll
 C:\Users\bluep\source\repos\Chat_App\ChatServer\bin\Debug\net6.0\ChatServer.pdb
-C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.csproj.AssemblyReference.cache
 C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.AssemblyInfoInputs.cache
 C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.AssemblyInfo.cs
@@ -13,3 +12,4 @@ C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\refint\ChatServ
 C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.pdb
 C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.genruntimeconfig.cache
 C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ref\ChatServer.dll
+C:\Users\bluep\source\repos\Chat_App\ChatServer\obj\Debug\net6.0\ChatServer.sourcelink.json

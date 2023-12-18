@@ -2,7 +2,6 @@ C:\Users\bluep\source\repos\Chat_App\Chat_App\bin\Debug\Chat_App.exe.config
 C:\Users\bluep\source\repos\Chat_App\Chat_App\bin\Debug\Chat_App.exe
 C:\Users\bluep\source\repos\Chat_App\Chat_App\bin\Debug\Chat_App.pdb
 C:\Users\bluep\source\repos\Chat_App\Chat_App\obj\Debug\ChatClient.csproj.AssemblyReference.cache
-C:\Users\bluep\source\repos\Chat_App\Chat_App\obj\Debug\ChatClient.csproj.SuggestedBindingRedirects.cache
 C:\Users\bluep\source\repos\Chat_App\Chat_App\obj\Debug\MVVM\View\MainWindow.g.cs
 C:\Users\bluep\source\repos\Chat_App\Chat_App\obj\Debug\App.g.cs
 C:\Users\bluep\source\repos\Chat_App\Chat_App\obj\Debug\Chat_App_MarkupCompile.cache
