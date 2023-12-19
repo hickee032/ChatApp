@@ -16,7 +16,12 @@ namespace Chat_App.MVVM.ViewModel
         private Server _server;
         public MainViewModel() {
             _server = new Server();
+            _server.connectedEvent += UserConnected;
             ConnectToServerCommand = new RelayCommand(o => _server.ConnectToServer(Username), o => !string.IsNullOrEmpty(Username));
+        }
+
+        private void UserConnected() {
+            throw new NotImplementedException();
         }
     }
 }

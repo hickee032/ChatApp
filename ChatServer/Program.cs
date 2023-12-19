@@ -19,6 +19,8 @@ namespace ChatrSever
             while (true) {
                 var client = new Client(_listener.AcceptTcpClient());
                 _users.Add(client);
+
+                BroadcastConnection();
             } 
         }
         static void BroadcastConnection() {
