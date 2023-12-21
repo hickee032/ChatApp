@@ -39,6 +39,15 @@ namespace Chat_App.Net
             Task.Run(() => {
                 while (true) {
                     var opcode = PacketReader.ReadByte();
+                    switch (opcode) {
+                        case 1:
+                            connectedEvent?.Invoke();
+                            break;
+                        default:
+                            Console.WriteLine("ah yes");
+                            break;
+
+                    }
                 }
             });
         }
