@@ -27,7 +27,7 @@ namespace Chat_App.Net
                 if (!string.IsNullOrEmpty(username)) {
                     var connectPacket = new PacketBuilder();
                     connectPacket.WriteOpCode(0);
-                    connectPacket.WriteString(username);
+                    connectPacket.WriteMessage(username);
                     _client.Client.Send(connectPacket.GetPacketBytes());
 
                 }
@@ -51,5 +51,13 @@ namespace Chat_App.Net
                 }
             });
         }
+
+        public void SendMessageToServer(string message) {
+            var messagePacket = new PacketBuilder();
+            messagePacket.WriteOpCode(5);
+            messagePacket.WriteMessage(message);
+            _client.Client.Send(messagePacket.GetPacketBytes());
+        }
+
     }
 }

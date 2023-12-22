@@ -18,7 +18,7 @@ namespace Chat_App.Net.IO
             _ms.WriteByte(opcode);
         }
 
-        public void WriteString(string msg) {
+        public void WriteMessage(string msg) {
             byte[] buff = BitConverter.GetBytes(msg.Length);
             _ms.Write(buff, 0, buff.Length); 
             _ms.Write(Encoding.ASCII.GetBytes(msg), 0, msg.Length);

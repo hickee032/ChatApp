@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Chat_App.MVVM.Model
 {
-    internal class UserModel
-    {
+    class UserModel {
+        public string Username { get; set; }
+        public string UID { get; set; }
     }
 }
