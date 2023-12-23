@@ -13,7 +13,10 @@ namespace Chat_App.Net
         TcpClient _client;
         
         public PacketReader PacketReader;
+
         public event Action connectedEvent;
+        public event Action msgReceivedEvent;
+        public event Action userDisconnectedEvent;
         public Server() {
             _client = new TcpClient();
         }
@@ -43,6 +46,13 @@ namespace Chat_App.Net
                         case 1:
                             connectedEvent?.Invoke();
                             break;
+                        case 5:
+                            msgReceivedEvent?.Invoke();
+                            break;
+                        case 10:
+                            userDisconnectedEvent?.Invoke();
+                            break;
+
                         default:
                             Console.WriteLine("ah yes");
                             break;

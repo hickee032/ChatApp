@@ -27,14 +27,39 @@ namespace ChatrSever
             foreach (var user in _users) {
                 foreach (var item in _users) {
                     var broadcastPacket = new PacketBuilder();
+
                     broadcastPacket.WriteOpCode(1);
                     broadcastPacket.WriteMessage(item.Username);
                     broadcastPacket.WriteMessage(item.UID.ToString());
 
                     user.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
                 }
-            
             }
+        }
+
+        public static void BroadcastMessage(string message) {
+            
+            foreach(var item in _users) {
+                var msgPacket = new PacketBuilder();
+                msgPacket.WriteOpCode(5);
+                msgPacket.WriteMessage(message);
+                item.ClientSocket.Client.Send(msgPacket.GetPacketBytes());
+            }
+        }
+
+        public static void BroadcastDisconnected(string uid) {
+
+            var disconnectedUser = _users.Where(x=>x.UID.ToString() ==uid).FirstOrDefault();
+            _users.Remove(disconnectedUser);
+
+            foreach (var item in _users) {
+                var broadcastPacket = new PacketBuilder();
+                broadcastPacket.WriteOpCode(10);
+                broadcastPacket.WriteMessage(uid);
+
+                item.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
+            }
+            BroadcastMessage($"[{disconnectedUser.Username}] Disconnected!");
         }
     }
 }
